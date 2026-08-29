@@ -1,0 +1,213 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  SUPER_ADMIN
+  ADMIN
+  STAFF
+}
+
+enum OrderStatus {
+  PENDING_PAYMENT
+  PAID
+  PREPARING
+  READY
+  COMPLETED
+  CANCELLED
+}
+
+enum PaymentMethod {
+  PAYSTACK
+  PAY_AT_LOUNGE
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String
+  passwordHash String
+  role         Role     @default(STAFF)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  description String?
+  image       String?
+  sortOrder   Int       @default(0)
+  products    Product[]
+}
+
+model Product {
+  id           String      @id @default(cuid())
+  name         String
+  slug         String      @unique
+  description  String
+  ingredients  String      @default("[]")
+  price        Int
+  image        String
+  available    Boolean     @default(true)
+  featured     Boolean     @default(false)
+  allowsExtras Boolean     @default(true)
+  sortOrder    Int         @default(0)
+  categoryId   String
+  category     Category    @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  orderItems   OrderItem[]
+}
+
+model Extra {
+  id        String  @id @default(cuid())
+  name      String
+  price     Int
+  image     String?
+  available Boolean @default(true)
+  sortOrder Int     @default(0)
+}
+
+model Customer {
+  id        String   @id @default(cuid())
+  name      String
+  email     String?
+  phone     String
+  createdAt DateTime @default(now())
+  orders    Order[]
+
+  @@index([phone])
+  @@index([email])
+}
+
+model Order {
+  id             String         @id @default(cuid())
+  orderNumber    String         @unique
+  customerId     String
+  customer       Customer       @relation(fields: [customerId], references: [id])
+  status         OrderStatus    @default(PENDING_PAYMENT)
+  paymentMethod  PaymentMethod
+  paystackRef    String?
+  subtotal       Int
+  discount       Int            @default(0)
+  total          Int
+  promoCode      String?
+  notes          String?
+  fulfillment    String         @default("DINE_IN")
+  paidAt         DateTime?
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  items          OrderItem[]
+}
+
+model OrderItem {
+  id         String   @id @default(cuid())
+  orderId    String
+  order      Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId  String?
+  product    Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+  name       String
+  unitPrice  Int
+  quantity   Int
+  extrasJson String   @default("[]")
+}
+
+model Promotion {
+  id          String    @id @default(cuid())
+  code        String    @unique
+  description String
+  type        String
+  value       Int
+  active      Boolean   @default(true)
+  featured    Boolean   @default(false)
+  startsAt    DateTime?
+  endsAt      DateTime?
+}
+
+model Testimonial {
+  id        String  @id @default(cuid())
+  name      String
+  quote     String
+  rating    Int     @default(5)
+  sortOrder Int     @default(0)
+  published Boolean @default(true)
+}
+
+model SiteSetting {
+  id            String @id @default("site")
+  restaurantName String
+  tagline       String
+  phone         String
+  email         String
+  address       String
+  instagram     String
+  tiktok        String
+  hoursJson     String
+  heroTitle     String
+  heroSubtitle  String
+  aboutText     String
+  bannerText    String?
+}
+
+enum ApplicationStatus {
+  DRAFT
+  SUBMITTED
+  REVIEWED
+  SHORTLISTED
+  REJECTED
+}
+
+model JobRole {
+  id           String         @id @default(cuid())
+  name         String
+  slug         String         @unique
+  sectionKey   String         @unique
+  description  String
+  focus        String         @default("")
+  isGeneral    Boolean        @default(false)
+  isOpen       Boolean        @default(true)
+  sortOrder    Int            @default(0)
+  questions    Question[]
+  applications Application[]
+}
+
+model Question {
+  id         String  @id @default(cuid())
+  jobRoleId  String
+  jobRole    JobRole @relation(fields: [jobRoleId], references: [id], onDelete: Cascade)
+  number     Int
+  prompt     String
+  optionsJson String
+  correctKey String
+  sortOrder  Int     @default(0)
+
+  @@unique([jobRoleId, number])
+}
+
+model Application {
+  id            String            @id @default(cuid())
+  name          String
+  email         String
+  phone         String
+  cvPath        String
+  cvName        String
+  jobRoleId     String
+  jobRole       JobRole           @relation(fields: [jobRoleId], references: [id])
+  status        ApplicationStatus @default(DRAFT)
+  answersJson   String            @default("{}")
+  generalScore  Int               @default(0)
+  generalMax    Int               @default(0)
+  roleScore     Int               @default(0)
+  roleMax       Int               @default(0)
+  totalScore    Int               @default(0)
+  totalMax      Int               @default(0)
+  adminNotes    String?
+  submittedAt   DateTime?
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+}

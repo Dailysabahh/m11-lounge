@@ -1,0 +1,1871 @@
+{
+  "general": {
+    "key": "A",
+    "name": "General Screening",
+    "focus": "",
+    "slug": "general-screening",
+    "questions": [
+      {
+        "number": 1,
+        "prompt": "A customer's bill comes to ₦8,650. They pay with a ₦10,000 note. How much change do you give?",
+        "options": [
+          {
+            "key": "A",
+            "text": "₦1,350"
+          },
+          {
+            "key": "B",
+            "text": "₦1,450"
+          },
+          {
+            "key": "C",
+            "text": "₦2,350"
+          },
+          {
+            "key": "D",
+            "text": "₦1,650"
+          }
+        ],
+        "correctKey": "A"
+      },
+      {
+        "number": 2,
+        "prompt": "A group's total bill is ₦24,000. Two guests' snacks (₦3,000) will be paid separately by them. The remaining 4 people split the rest equally. How much does each of the 4 pay?",
+        "options": [
+          {
+            "key": "A",
+            "text": "₦5,000"
+          },
+          {
+            "key": "B",
+            "text": "₦6,000"
+          },
+          {
+            "key": "C",
+            "text": "₦4,750"
+          },
+          {
+            "key": "D",
+            "text": "₦5,250"
+          }
+        ],
+        "correctKey": "D"
+      },
+      {
+        "number": 3,
+        "prompt": "What comes next in this sequence? 2, 6, 12, 20, 30, __",
+        "options": [
+          {
+            "key": "A",
+            "text": "36"
+          },
+          {
+            "key": "B",
+            "text": "44"
+          },
+          {
+            "key": "C",
+            "text": "42"
+          },
+          {
+            "key": "D",
+            "text": "40"
+          }
+        ],
+        "correctKey": "C"
+      },
+      {
+        "number": 4,
+        "prompt": "You are told: 'All VIP guests get a free welcome drink. John got a free welcome drink.' What can you correctly conclude?",
+        "options": [
+          {
+            "key": "A",
+            "text": "All guests who order drinks are VIP"
+          },
+          {
+            "key": "B",
+            "text": "John's free drink alone doesn't prove he is a VIP guest"
+          },
+          {
+            "key": "C",
+            "text": "John is definitely a VIP guest"
+          },
+          {
+            "key": "D",
+            "text": "John paid for his drink"
+          }
+        ],
+        "correctKey": "B"
+      },
+      {
+        "number": 5,
+        "prompt": "Which of these is the correctly written welcome message?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Welcome to our lounge, kindly proceed to the counter to place your order."
+          },
+          {
+            "key": "B",
+            "text": "Welcome to our loung, kindly proceede to the counter to place you're order."
+          },
+          {
+            "key": "C",
+            "text": "Welcome too our lounge, kindly proceed too the counter to place your order."
+          },
+          {
+            "key": "D",
+            "text": "Welcome to our Lounge kindly proceed too the counter to place you're order"
+          }
+        ],
+        "correctKey": "A"
+      },
+      {
+        "number": 6,
+        "prompt": "A shift handover note says: 'Table 4 owes ₦12,000, table 7 already paid, restock happened at 9, generator issue reported.' What should you act on FIRST?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Chasing table 4 for the ₦12,000 owed"
+          },
+          {
+            "key": "B",
+            "text": "Confirming table 7's payment was recorded"
+          },
+          {
+            "key": "C",
+            "text": "Checking that the restock was done properly"
+          },
+          {
+            "key": "D",
+            "text": "The generator issue, since it can affect the whole venue's operation"
+          }
+        ],
+        "correctKey": "D"
+      },
+      {
+        "number": 7,
+        "prompt": "You notice a colleague quietly removing cash from the till when they think no one is watching. What should you do?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Confront the colleague directly in front of customers"
+          },
+          {
+            "key": "B",
+            "text": "Wait to see if it happens again before doing anything"
+          },
+          {
+            "key": "C",
+            "text": "Report it to your supervisor or manager as soon as possible"
+          },
+          {
+            "key": "D",
+            "text": "Ignore it, it's not your business"
+          }
+        ],
+        "correctKey": "C"
+      },
+      {
+        "number": 8,
+        "prompt": "A regular customer who tips well asks you to give them a free drink and 'not put it on the system.' How should you respond?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ask a colleague to enter it under a different table"
+          },
+          {
+            "key": "B",
+            "text": "Politely explain that you cannot do that and follow standard procedure"
+          },
+          {
+            "key": "C",
+            "text": "Give the free drink since they tip well"
+          },
+          {
+            "key": "D",
+            "text": "Give it but ask them not to mention it"
+          }
+        ],
+        "correctKey": "B"
+      },
+      {
+        "number": 9,
+        "prompt": "You find ₦5,000 on the floor near an empty table with no one around to claim it. What should you do?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hand it in to your supervisor and report it as found property"
+          },
+          {
+            "key": "B",
+            "text": "Keep it since no one is around"
+          },
+          {
+            "key": "C",
+            "text": "Split it with a colleague"
+          },
+          {
+            "key": "D",
+            "text": "Leave it there for the customer to come back"
+          }
+        ],
+        "correctKey": "A"
+      },
+      {
+        "number": 10,
+        "prompt": "3 light switches outside a storeroom each control 1 of 3 bulbs inside. You can flip switches as much as you like but can only enter the room ONCE. What's the correct method to identify all 3?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Turn on all three switches then enter and see which bulbs are lit"
+          },
+          {
+            "key": "B",
+            "text": "Flip each switch once and enter after each flip"
+          },
+          {
+            "key": "C",
+            "text": "It cannot be determined with only one entry"
+          },
+          {
+            "key": "D",
+            "text": "Turn on switch 1, wait several minutes, turn it off, turn on switch 2, then enter — the lit bulb is switch 2, the warm dark bulb is switch 1, the cold dark bulb is switch 3"
+          }
+        ],
+        "correctKey": "D"
+      },
+      {
+        "number": 11,
+        "prompt": "If 5 machines take 5 minutes to make 5 drinks, how long would it take 100 machines to make 100 drinks?",
+        "options": [
+          {
+            "key": "A",
+            "text": "20 minutes"
+          },
+          {
+            "key": "B",
+            "text": "500 minutes"
+          },
+          {
+            "key": "C",
+            "text": "5 minutes"
+          },
+          {
+            "key": "D",
+            "text": "100 minutes"
+          }
+        ],
+        "correctKey": "C"
+      }
+    ]
+  },
+  "roles": [
+    {
+      "key": "B",
+      "name": "Waiter / Waitress",
+      "focus": "customer service, memory/multitasking, composure under pressure.",
+      "slug": "waiter-waitress",
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "A group of 4 guests walks in. What's the correct way to greet and seat them?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Seat them at the first available table without asking preferences"
+            },
+            {
+              "key": "B",
+              "text": "Greet warmly, confirm party size, and escort them to an appropriate table"
+            },
+            {
+              "key": "C",
+              "text": "Ignore them until they sit themselves"
+            },
+            {
+              "key": "D",
+              "text": "Tell them to wait without any acknowledgment"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 2,
+          "prompt": "A customer complains their food is cold after waiting 20 minutes. What's the best response?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Apologize, offer to fix or replace the item, and inform the kitchen"
+            },
+            {
+              "key": "B",
+              "text": "Tell them the kitchen was busy and there's nothing you can do"
+            },
+            {
+              "key": "C",
+              "text": "Ignore the complaint and hope they let it go"
+            },
+            {
+              "key": "D",
+              "text": "Argue that the food wasn't that cold"
+            }
+          ],
+          "correctKey": "A"
+        },
+        {
+          "number": 3,
+          "prompt": "You're serving 5 tables and two raise their hands for you at the same time. What's the best approach?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Attend to the more familiar/regular customer first"
+            },
+            {
+              "key": "B",
+              "text": "Ignore both until you finish your current task"
+            },
+            {
+              "key": "C",
+              "text": "Randomly pick one"
+            },
+            {
+              "key": "D",
+              "text": "Acknowledge both immediately, let them know you'll be right there, and prioritize by urgency"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 4,
+          "prompt": "A customer changes their order twice before it reaches the kitchen. What's the best way to ensure accuracy?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Only update the final order after the customer leaves"
+            },
+            {
+              "key": "B",
+              "text": "Ask the kitchen to guess based on prior orders"
+            },
+            {
+              "key": "C",
+              "text": "Update the order in the POS/ticket system each time so kitchen and bill both reflect the latest version"
+            },
+            {
+              "key": "D",
+              "text": "Rely on memory and tell the kitchen verbally each time"
+            }
+          ],
+          "correctKey": "C"
+        },
+        {
+          "number": 5,
+          "prompt": "A customer becomes visibly drunk and aggressive toward other guests. What should you do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Ignore it since it's not your table"
+            },
+            {
+              "key": "B",
+              "text": "Discreetly alert your supervisor or security and avoid personally escalating"
+            },
+            {
+              "key": "C",
+              "text": "Serve them another drink to calm them down"
+            },
+            {
+              "key": "D",
+              "text": "Confront them firmly yourself"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 6,
+          "prompt": "You accidentally spill a drink on a customer's phone. What's the correct immediate response?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Apologize, help clean it up, and inform your supervisor immediately"
+            },
+            {
+              "key": "B",
+              "text": "Say sorry and continue serving other tables"
+            },
+            {
+              "key": "C",
+              "text": "Blame the customer for having the phone on the table"
+            },
+            {
+              "key": "D",
+              "text": "Ignore it if the customer doesn't complain"
+            }
+          ],
+          "correctKey": "A"
+        }
+      ]
+    },
+    {
+      "key": "C",
+      "name": "Barman / Bartender",
+      "focus": "drink knowledge, speed under pressure, cash/stock handling, responsible service.",
+      "slug": "barman-bartender",
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "Why does consistently measuring shots matter?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It only affects taste, not cost"
+            },
+            {
+              "key": "B",
+              "text": "It's not important as long as customers are happy"
+            },
+            {
+              "key": "C",
+              "text": "It only matters for expensive spirits"
+            },
+            {
+              "key": "D",
+              "text": "It controls cost, ensures fair pricing, and keeps drinks tasting the same every time"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 2,
+          "prompt": "You run out of a key ingredient for a popular cocktail mid-rush. What's the best action?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Make the drink without the ingredient and hope they don't notice"
+            },
+            {
+              "key": "B",
+              "text": "Cancel the order without explanation"
+            },
+            {
+              "key": "C",
+              "text": "Suggest a close substitute or alternative drink and inform your supervisor to restock"
+            },
+            {
+              "key": "D",
+              "text": "Tell the customer to wait until you restock mid-shift"
+            }
+          ],
+          "correctKey": "C"
+        },
+        {
+          "number": 3,
+          "prompt": "Your till is short by ₦2,000 at the end of your shift. What's the correct first step?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Ignore it, it happens all the time"
+            },
+            {
+              "key": "B",
+              "text": "Recheck your sales records, receipts, and cash count for errors before reporting"
+            },
+            {
+              "key": "C",
+              "text": "Report it as theft immediately without checking anything"
+            },
+            {
+              "key": "D",
+              "text": "Add ₦2,000 of your own money quietly to balance it"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 4,
+          "prompt": "It's peak hour and you have 8 drink orders waiting. What's the best approach?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Batch similar drinks together and prioritize based on prep time and order sequence"
+            },
+            {
+              "key": "B",
+              "text": "Make drinks one at a time strictly in the order received"
+            },
+            {
+              "key": "C",
+              "text": "Serve the loudest customer first"
+            },
+            {
+              "key": "D",
+              "text": "Stop taking new orders until caught up"
+            }
+          ],
+          "correctKey": "A"
+        },
+        {
+          "number": 5,
+          "prompt": "A guest who is clearly already very intoxicated orders another double shot. What should you do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Serve them since it's their choice"
+            },
+            {
+              "key": "B",
+              "text": "Serve a smaller portion secretly"
+            },
+            {
+              "key": "C",
+              "text": "Serve but charge double"
+            },
+            {
+              "key": "D",
+              "text": "Politely decline further alcohol, offer water/food, and alert a supervisor if needed"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 6,
+          "prompt": "Someone you suspect is underage tries to order alcohol. What's the correct action?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Serve non-alcoholic drinks only without checking ID"
+            },
+            {
+              "key": "B",
+              "text": "Let a colleague decide"
+            },
+            {
+              "key": "C",
+              "text": "Ask for valid ID and refuse service if it can't be verified"
+            },
+            {
+              "key": "D",
+              "text": "Serve them if they look 'close enough' to the legal age"
+            }
+          ],
+          "correctKey": "C"
+        }
+      ]
+    },
+    {
+      "key": "D",
+      "name": "DJ",
+      "focus": "reading the crowd, technical skill, reliability, adaptability.",
+      "slug": "dj",
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "The dance floor is empty and energy is low at 9pm. What's the best strategy?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Play only slow songs all night"
+            },
+            {
+              "key": "B",
+              "text": "Gradually build energy with accessible, familiar tracks before ramping up"
+            },
+            {
+              "key": "C",
+              "text": "Play the most intense/loudest tracks immediately"
+            },
+            {
+              "key": "D",
+              "text": "Stop playing music until people show interest"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 2,
+          "prompt": "Halfway through your set, the crowd's energy drops fast. What's the correct response?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Read the crowd and adjust track selection/tempo in real time"
+            },
+            {
+              "key": "B",
+              "text": "Continue as planned regardless"
+            },
+            {
+              "key": "C",
+              "text": "End the set early"
+            },
+            {
+              "key": "D",
+              "text": "Turn up the volume without changing songs"
+            }
+          ],
+          "correctKey": "A"
+        },
+        {
+          "number": 3,
+          "prompt": "A group requests a song that doesn't fit the current vibe or audience at all. What's the best handling?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Play it immediately to please them"
+            },
+            {
+              "key": "B",
+              "text": "Ignore the request completely without acknowledgment"
+            },
+            {
+              "key": "C",
+              "text": "Argue with the guest about music taste"
+            },
+            {
+              "key": "D",
+              "text": "Politely decline or find a way to blend it in later if appropriate, prioritizing the overall crowd experience"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 4,
+          "prompt": "Your equipment glitches or a track cuts out mid-mix during a packed set. What should you do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Blame the venue's equipment loudly"
+            },
+            {
+              "key": "B",
+              "text": "Leave the booth to find help"
+            },
+            {
+              "key": "C",
+              "text": "Stay calm and quickly troubleshoot or switch to backup equipment/track"
+            },
+            {
+              "key": "D",
+              "text": "Panic and stop the show"
+            }
+          ],
+          "correctKey": "C"
+        },
+        {
+          "number": 5,
+          "prompt": "The manager asks you to keep the volume within a limit due to noise complaints, but guests keep asking for it louder. What's the best balance?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Only play at low volume all night regardless of energy"
+            },
+            {
+              "key": "B",
+              "text": "Respect the agreed volume limit while using mixing techniques to maintain energy"
+            },
+            {
+              "key": "C",
+              "text": "Ignore the noise limit and play as loud as guests want"
+            },
+            {
+              "key": "D",
+              "text": "Turn the music off completely"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 6,
+          "prompt": "You're running late for a gig due to an emergency. What's the correct way to handle it?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Notify the venue as early as possible with a clear update and backup plan"
+            },
+            {
+              "key": "B",
+              "text": "Say nothing and show up whenever"
+            },
+            {
+              "key": "C",
+              "text": "Cancel without informing anyone"
+            },
+            {
+              "key": "D",
+              "text": "Ask a friend to pretend to be you"
+            }
+          ],
+          "correctKey": "A"
+        }
+      ]
+    },
+    {
+      "key": "E",
+      "name": "Hypeman / MC",
+      "focus": "crowd energy, mic presence, quick thinking, teamwork with DJ.",
+      "slug": "hypeman-mc",
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "How should you hype up a quiet crowd early in the night?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Yell non-stop regardless of crowd response"
+            },
+            {
+              "key": "B",
+              "text": "Stay silent until the crowd is already hyped"
+            },
+            {
+              "key": "C",
+              "text": "Play recorded hype sounds instead of engaging directly"
+            },
+            {
+              "key": "D",
+              "text": "Read the room and build energy gradually with engaging call-and-response"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 2,
+          "prompt": "How do you keep energy high without repeating yourself over a 4-hour shift?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Go quiet for long stretches to save your voice"
+            },
+            {
+              "key": "B",
+              "text": "Let the DJ handle all crowd engagement"
+            },
+            {
+              "key": "C",
+              "text": "Vary your phrases, pace, and engagement style to keep it fresh"
+            },
+            {
+              "key": "D",
+              "text": "Repeat the same few phrases all night"
+            }
+          ],
+          "correctKey": "C"
+        },
+        {
+          "number": 3,
+          "prompt": "You need to announce a drinks promo without it sounding like an ad. Best approach?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Shout the promo repeatedly between every song"
+            },
+            {
+              "key": "B",
+              "text": "Blend it naturally into the energy and flow of the hype"
+            },
+            {
+              "key": "C",
+              "text": "Read the promo word-for-word like an announcement"
+            },
+            {
+              "key": "D",
+              "text": "Ignore promo requests entirely"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 4,
+          "prompt": "Two guests start arguing near the stage while you're on the mic. What should you do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Redirect the crowd's energy/attention while discreetly alerting security or a supervisor"
+            },
+            {
+              "key": "B",
+              "text": "Ignore it and keep hyping"
+            },
+            {
+              "key": "C",
+              "text": "Call out the guests by name on the mic"
+            },
+            {
+              "key": "D",
+              "text": "Stop the event completely"
+            }
+          ],
+          "correctKey": "A"
+        },
+        {
+          "number": 5,
+          "prompt": "The DJ changes the set unexpectedly. How should you respond?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Stick rigidly to your planned script"
+            },
+            {
+              "key": "B",
+              "text": "Stop engaging until the DJ tells you what's next"
+            },
+            {
+              "key": "C",
+              "text": "Argue with the DJ on the mic"
+            },
+            {
+              "key": "D",
+              "text": "Stay alert and adjust your energy/commentary to match the new direction"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 6,
+          "prompt": "Your voice is going hoarse halfway through the night. What's the best way to manage the rest of your shift?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Stop hyping completely for the rest of the night"
+            },
+            {
+              "key": "B",
+              "text": "Ask a guest to take over"
+            },
+            {
+              "key": "C",
+              "text": "Pace yourself, use mic technique, and stay hydrated"
+            },
+            {
+              "key": "D",
+              "text": "Push through at full volume regardless"
+            }
+          ],
+          "correctKey": "C"
+        }
+      ]
+    },
+    {
+      "key": "F",
+      "name": "Cleaner",
+      "focus": "hygiene standards, thoroughness, initiative, discretion.",
+      "slug": "cleaner",
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "What's the best way to clean and reset a restroom during a busy night?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Leave it until closing time"
+            },
+            {
+              "key": "B",
+              "text": "Do regular, scheduled checks and quick resets throughout the night"
+            },
+            {
+              "key": "C",
+              "text": "Clean once at the start of the night only"
+            },
+            {
+              "key": "D",
+              "text": "Only clean when a customer complains"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 2,
+          "prompt": "What's the key difference between cleaning a spill for appearance vs. for safety (e.g. broken glass or a wet floor)?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Safety cleaning requires immediate action and hazard signage, not just wiping for looks"
+            },
+            {
+              "key": "B",
+              "text": "There is no real difference"
+            },
+            {
+              "key": "C",
+              "text": "Appearance always comes first"
+            },
+            {
+              "key": "D",
+              "text": "Safety cleaning can wait until closing"
+            }
+          ],
+          "correctKey": "A"
+        },
+        {
+          "number": 3,
+          "prompt": "How should you prioritize cleaning tasks across opening, service, and closing?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Do all tasks in a random order"
+            },
+            {
+              "key": "B",
+              "text": "Only clean during closing"
+            },
+            {
+              "key": "C",
+              "text": "Do the easiest tasks first regardless of urgency"
+            },
+            {
+              "key": "D",
+              "text": "Prioritize based on what's most urgent for guest safety and experience at each stage"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 4,
+          "prompt": "You notice a small water leak near an electrical socket while cleaning. What should you do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Try to fix the electrical issue yourself"
+            },
+            {
+              "key": "B",
+              "text": "Ignore it if no one has complained"
+            },
+            {
+              "key": "C",
+              "text": "Stop, avoid the area, and report it immediately to a supervisor"
+            },
+            {
+              "key": "D",
+              "text": "Clean around it and continue"
+            }
+          ],
+          "correctKey": "C"
+        },
+        {
+          "number": 5,
+          "prompt": "You find a customer's phone left behind. What's the correct action?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Leave it where you found it"
+            },
+            {
+              "key": "B",
+              "text": "Hand it in immediately to a supervisor and log it as found property"
+            },
+            {
+              "key": "C",
+              "text": "Keep it in your pocket until someone asks"
+            },
+            {
+              "key": "D",
+              "text": "Try to find the owner yourself by going through it"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 6,
+          "prompt": "While cleaning near a table, you overhear guests discussing something private. How should you conduct yourself?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Maintain discretion and do not repeat or act on what you overheard"
+            },
+            {
+              "key": "B",
+              "text": "Repeat what you heard to other staff"
+            },
+            {
+              "key": "C",
+              "text": "Join the conversation"
+            },
+            {
+              "key": "D",
+              "text": "Report it to the guests' friends"
+            }
+          ],
+          "correctKey": "A"
+        }
+      ]
+    },
+    {
+      "key": "G",
+      "name": "Accountant",
+      "focus": "numerical accuracy, reconciliation, ethics, basic financial reasoning.",
+      "slug": "accountant",
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "Recorded sales are ₦4,850,000, but bank deposits + cash total only ₦4,700,000 — a ₦150,000 gap. What's the correct first step?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Assume it's theft and report to police immediately"
+            },
+            {
+              "key": "B",
+              "text": "Adjust the books to make the numbers match"
+            },
+            {
+              "key": "C",
+              "text": "Ignore small gaps under ₦200,000"
+            },
+            {
+              "key": "D",
+              "text": "Systematically reconcile daily records, receipts, and deposit slips to trace the discrepancy"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 2,
+          "prompt": "What's the correct way to reconcile 3 POS points against the bank deposit?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Skip reconciliation if the totals look roughly right"
+            },
+            {
+              "key": "B",
+              "text": "Only reconcile at month-end"
+            },
+            {
+              "key": "C",
+              "text": "Reconcile each POS point daily against its corresponding deposit before totaling"
+            },
+            {
+              "key": "D",
+              "text": "Total all POS records together and compare to the deposit weekly"
+            }
+          ],
+          "correctKey": "C"
+        },
+        {
+          "number": 3,
+          "prompt": "Which statement correctly explains revenue, profit, and cash flow?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Profit always equals cash on hand"
+            },
+            {
+              "key": "B",
+              "text": "Revenue is total sales, profit is what's left after costs, and cash flow is the actual money moving in and out — a business can be profitable but still cash-poor"
+            },
+            {
+              "key": "C",
+              "text": "They all mean the same thing"
+            },
+            {
+              "key": "D",
+              "text": "Cash flow is only relevant for accountants, not managers"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 4,
+          "prompt": "What's the best practice to reduce till fraud or stock 'shrinkage'?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Implement regular reconciliation, spot checks, and separation of duties"
+            },
+            {
+              "key": "B",
+              "text": "Trust staff fully with no checks"
+            },
+            {
+              "key": "C",
+              "text": "Only check accounts once a year"
+            },
+            {
+              "key": "D",
+              "text": "Give one person control over all cash handling and recording"
+            }
+          ],
+          "correctKey": "A"
+        },
+        {
+          "number": 5,
+          "prompt": "A department head asks you to approve a reimbursement without a receipt because 'it's urgent.' What's the correct action?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Approve it immediately since it's urgent"
+            },
+            {
+              "key": "B",
+              "text": "Approve it but tell no one"
+            },
+            {
+              "key": "C",
+              "text": "Refuse to ever discuss it again"
+            },
+            {
+              "key": "D",
+              "text": "Require proper documentation or a formal exception process before approving"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 6,
+          "prompt": "You discover a pattern suggesting a senior staff member has inflated expense claims over months. What should you do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Confront them publicly"
+            },
+            {
+              "key": "B",
+              "text": "Quietly adjust their future claims without telling anyone"
+            },
+            {
+              "key": "C",
+              "text": "Document your findings and report through proper channels (e.g. management/owner)"
+            },
+            {
+              "key": "D",
+              "text": "Ignore it since they are senior"
+            }
+          ],
+          "correctKey": "C"
+        }
+      ]
+    },
+    {
+      "key": "H",
+      "name": "Storekeeper",
+      "focus": "inventory accuracy, stock control discipline, loss prevention, organization.",
+      "slug": "storekeeper",
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "What's the best system for tracking stock in and out?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Let anyone take stock without documentation"
+            },
+            {
+              "key": "B",
+              "text": "Use a logged requisition/stock card system for every item moved in or out"
+            },
+            {
+              "key": "C",
+              "text": "Rely on memory and verbal updates"
+            },
+            {
+              "key": "D",
+              "text": "Only count stock once a year"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 2,
+          "prompt": "A physical count shows 3 fewer crates than the system says. What's the correct first step?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Recheck the count, review recent requisitions/deliveries, and trace the discrepancy systematically"
+            },
+            {
+              "key": "B",
+              "text": "Immediately assume theft and accuse staff"
+            },
+            {
+              "key": "C",
+              "text": "Adjust the system number to match without investigating"
+            },
+            {
+              "key": "D",
+              "text": "Ignore it if it's a small quantity"
+            }
+          ],
+          "correctKey": "A"
+        },
+        {
+          "number": 3,
+          "prompt": "How should reorder levels be decided?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Reorder only when completely out of stock"
+            },
+            {
+              "key": "B",
+              "text": "Reorder the same fixed amount every week regardless of usage"
+            },
+            {
+              "key": "C",
+              "text": "Let suppliers decide when to deliver"
+            },
+            {
+              "key": "D",
+              "text": "Set reorder points based on usage rate and lead time to restock before running out"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 4,
+          "prompt": "A bartender wants stock released without a requisition form because it's a busy night. What's the correct action?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Refuse to release any stock during busy periods"
+            },
+            {
+              "key": "B",
+              "text": "Let them fill in the form later, if ever"
+            },
+            {
+              "key": "C",
+              "text": "Require the proper requisition process even if it takes a moment longer"
+            },
+            {
+              "key": "D",
+              "text": "Release it without documentation since it's busy"
+            }
+          ],
+          "correctKey": "C"
+        },
+        {
+          "number": 5,
+          "prompt": "What's the best way to organize the store to reduce breakages and spoilage?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Keep the newest stock in front at all times"
+            },
+            {
+              "key": "B",
+              "text": "Use FIFO (first in, first out) for perishables and organize logically for safe, easy picking"
+            },
+            {
+              "key": "C",
+              "text": "Store items randomly wherever there's space"
+            },
+            {
+              "key": "D",
+              "text": "Stack heaviest items on top for easy access"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 6,
+          "prompt": "You suspect a colleague is regularly taking small amounts of stock for personal use. What should you do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Report your observations to a supervisor/manager through proper channels"
+            },
+            {
+              "key": "B",
+              "text": "Ignore it since amounts are small"
+            },
+            {
+              "key": "C",
+              "text": "Confront them and demand they stop"
+            },
+            {
+              "key": "D",
+              "text": "Start taking stock too since others do it"
+            }
+          ],
+          "correctKey": "A"
+        }
+      ]
+    },
+    {
+      "key": "I",
+      "name": "Sales Representative",
+      "focus": "persuasion, target orientation, relationship building, resilience.",
+      "slug": "sales-representative",
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "A potential client says your prices are too high compared to a competitor. What's the best response?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Immediately drop the price to match"
+            },
+            {
+              "key": "B",
+              "text": "Argue that the competitor is worse"
+            },
+            {
+              "key": "C",
+              "text": "End the conversation"
+            },
+            {
+              "key": "D",
+              "text": "Acknowledge the concern and highlight the venue's unique value/experience rather than competing on price alone"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 2,
+          "prompt": "Given a monthly target of ₦2,000,000, what's the correct way to approach it?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Set no plan and hope to hit it naturally"
+            },
+            {
+              "key": "B",
+              "text": "Only focus on the biggest potential client"
+            },
+            {
+              "key": "C",
+              "text": "Break the target into weekly/daily activity goals and track progress consistently"
+            },
+            {
+              "key": "D",
+              "text": "Wait until the last week of the month to start pushing sales"
+            }
+          ],
+          "correctKey": "C"
+        },
+        {
+          "number": 3,
+          "prompt": "What's the best way to make sure no leads are forgotten?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Delete leads that don't respond immediately"
+            },
+            {
+              "key": "B",
+              "text": "Maintain a lead-tracking system (spreadsheet/CRM) with follow-up dates and status"
+            },
+            {
+              "key": "C",
+              "text": "Rely on memory for who to follow up with"
+            },
+            {
+              "key": "D",
+              "text": "Only follow up with leads who reach out again first"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 4,
+          "prompt": "How should you handle 5 rejections in a row while prospecting?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Treat each rejection as normal in sales, review what can be improved, and keep going"
+            },
+            {
+              "key": "B",
+              "text": "Stop reaching out for the rest of the day"
+            },
+            {
+              "key": "C",
+              "text": "Take it personally and avoid those prospects forever"
+            },
+            {
+              "key": "D",
+              "text": "Lower your standards to just accept any deal"
+            }
+          ],
+          "correctKey": "A"
+        },
+        {
+          "number": 5,
+          "prompt": "A client you brought in has a bad experience at the venue. What's the correct handling?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Avoid contacting them again to sidestep the issue"
+            },
+            {
+              "key": "B",
+              "text": "Blame another department and move on"
+            },
+            {
+              "key": "C",
+              "text": "Offer a discount without addressing the root issue"
+            },
+            {
+              "key": "D",
+              "text": "Acknowledge the issue, escalate internally to fix it, and follow up personally to rebuild trust"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 6,
+          "prompt": "What's the best way to reach corporate clients or event planners?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Send the same generic message to everyone"
+            },
+            {
+              "key": "B",
+              "text": "Only rely on walk-in inquiries"
+            },
+            {
+              "key": "C",
+              "text": "Proactively research and reach out with tailored pitches showing relevant value"
+            },
+            {
+              "key": "D",
+              "text": "Wait for them to find the venue themselves"
+            }
+          ],
+          "correctKey": "C"
+        }
+      ]
+    },
+    {
+      "key": "J",
+      "name": "Public Relations (PR) Officer",
+      "focus": "brand voice, crisis handling, social media savvy, relationship management.",
+      "slug": "public-relations-pr-officer",
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "What's the best approach to planning a week of social media content?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Repost competitor content"
+            },
+            {
+              "key": "B",
+              "text": "Plan a mix of promotions, events, and brand-personality content in advance with a content calendar"
+            },
+            {
+              "key": "C",
+              "text": "Post randomly whenever you remember"
+            },
+            {
+              "key": "D",
+              "text": "Only post when told to by the manager"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 2,
+          "prompt": "A customer posts online about a bad experience and it starts getting shared. What's the correct response?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Respond promptly, professionally, and empathetically online, and address the root issue internally"
+            },
+            {
+              "key": "B",
+              "text": "Delete or ignore it and hope it goes away"
+            },
+            {
+              "key": "C",
+              "text": "Argue with the customer publicly"
+            },
+            {
+              "key": "D",
+              "text": "Offer a public apology only, with no internal follow-up"
+            }
+          ],
+          "correctKey": "A"
+        },
+        {
+          "number": 3,
+          "prompt": "A false but negative rumor about the venue starts spreading. What's the best handling?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Ignore it completely"
+            },
+            {
+              "key": "B",
+              "text": "Publicly attack whoever started it"
+            },
+            {
+              "key": "C",
+              "text": "Post about it repeatedly every day until it stops"
+            },
+            {
+              "key": "D",
+              "text": "Address it calmly and factually through appropriate channels without amplifying it unnecessarily"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 4,
+          "prompt": "What's the best way to build relationships with local influencers or media?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Pay for coverage exclusively and skip relationship building"
+            },
+            {
+              "key": "B",
+              "text": "Avoid influencers and rely only on paid ads"
+            },
+            {
+              "key": "C",
+              "text": "Build genuine, ongoing relationships and offer mutual value over time"
+            },
+            {
+              "key": "D",
+              "text": "Only reach out when you need something"
+            }
+          ],
+          "correctKey": "C"
+        },
+        {
+          "number": 5,
+          "prompt": "How should you measure whether a PR campaign was successful?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Ask the manager if they 'feel' it worked"
+            },
+            {
+              "key": "B",
+              "text": "Track relevant metrics like engagement, reach, and foot traffic/bookings tied to the campaign"
+            },
+            {
+              "key": "C",
+              "text": "Just count how many posts were made"
+            },
+            {
+              "key": "D",
+              "text": "Success can't be measured"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 6,
+          "prompt": "How should the brand's tone and image be decided?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Base it on the target audience and the experience the venue wants to be known for"
+            },
+            {
+              "key": "B",
+              "text": "Copy whatever another venue is doing"
+            },
+            {
+              "key": "C",
+              "text": "Change the tone daily for variety"
+            },
+            {
+              "key": "D",
+              "text": "Let it happen naturally with no strategy"
+            }
+          ],
+          "correctKey": "A"
+        }
+      ]
+    },
+    {
+      "key": "K",
+      "name": "Supervisor",
+      "focus": "leadership under pressure, conflict resolution, standards enforcement, delegation.",
+      "slug": "supervisor",
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "It's a busy Friday night and you're short-staffed. What's the best approach?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Let service quality drop without adjusting anything"
+            },
+            {
+              "key": "B",
+              "text": "Close sections randomly without explanation"
+            },
+            {
+              "key": "C",
+              "text": "Do all the work yourself alone"
+            },
+            {
+              "key": "D",
+              "text": "Reorganize roles/priorities, communicate clearly with the team, and focus on critical stations first"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 2,
+          "prompt": "What's the best way to brief your team at the start of a shift?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Only brief if there's a problem"
+            },
+            {
+              "key": "B",
+              "text": "Assume everyone already knows what to do"
+            },
+            {
+              "key": "C",
+              "text": "Clearly communicate priorities, expectations, and any special notes before the shift starts"
+            },
+            {
+              "key": "D",
+              "text": "Skip briefings to save time"
+            }
+          ],
+          "correctKey": "C"
+        },
+        {
+          "number": 3,
+          "prompt": "A staff member is consistently underperforming despite being told before. What's the correct action?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Publicly criticize them in front of others"
+            },
+            {
+              "key": "B",
+              "text": "Follow a structured process — clear feedback, documented warning, and support/consequences as needed"
+            },
+            {
+              "key": "C",
+              "text": "Ignore it and hope it improves"
+            },
+            {
+              "key": "D",
+              "text": "Fire them immediately without discussion"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 4,
+          "prompt": "Two staff members argue in front of customers during service. What's the correct action?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Calmly separate them immediately, resolve the visible disruption, and address the issue privately afterward"
+            },
+            {
+              "key": "B",
+              "text": "Let them sort it out themselves in the moment"
+            },
+            {
+              "key": "C",
+              "text": "Side with one of them publicly"
+            },
+            {
+              "key": "D",
+              "text": "Ignore it since customers are watching"
+            }
+          ],
+          "correctKey": "A"
+        },
+        {
+          "number": 5,
+          "prompt": "A customer demands a refund they aren't entitled to and is getting loud. What's the best handling?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Give in immediately to avoid conflict"
+            },
+            {
+              "key": "B",
+              "text": "Argue back loudly"
+            },
+            {
+              "key": "C",
+              "text": "Ignore the customer until they leave"
+            },
+            {
+              "key": "D",
+              "text": "Stay calm, listen, explain policy clearly, and offer a fair resolution within your authority"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 6,
+          "prompt": "You catch a staff member breaking policy (giving away free drinks) for the first time. What's the correct action?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Fire them immediately"
+            },
+            {
+              "key": "B",
+              "text": "Say nothing but treat them differently going forward"
+            },
+            {
+              "key": "C",
+              "text": "Address it directly, explain the policy and consequences, and document it fairly"
+            },
+            {
+              "key": "D",
+              "text": "Ignore it since it's the first time"
+            }
+          ],
+          "correctKey": "C"
+        }
+      ]
+    },
+    {
+      "key": "L",
+      "name": "Manager",
+      "focus": "strategic thinking, P&L ownership, team building, decision-making under ambiguity.",
+      "slug": "manager",
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "Revenue has been flat for 3 months while costs are rising. What's the correct first step?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Immediately raise prices across the board"
+            },
+            {
+              "key": "B",
+              "text": "Analyze revenue and cost drivers systematically before deciding what to change"
+            },
+            {
+              "key": "C",
+              "text": "Cut random costs immediately"
+            },
+            {
+              "key": "D",
+              "text": "Wait and see if it improves"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 2,
+          "prompt": "How should you decide between investing in a new attraction vs. spending on marketing?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Evaluate expected return, costs, and current business needs/data before deciding"
+            },
+            {
+              "key": "B",
+              "text": "Always choose the option that 'sounds exciting'"
+            },
+            {
+              "key": "C",
+              "text": "Flip a coin"
+            },
+            {
+              "key": "D",
+              "text": "Copy whatever a competitor is doing"
+            }
+          ],
+          "correctKey": "A"
+        },
+        {
+          "number": 3,
+          "prompt": "What's the correct way to read a monthly P&L statement?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Only look at the total revenue figure"
+            },
+            {
+              "key": "B",
+              "text": "Ignore it since supervisors handle daily operations"
+            },
+            {
+              "key": "C",
+              "text": "Only check it once a year"
+            },
+            {
+              "key": "D",
+              "text": "Review revenue, costs, and margins together to understand overall business health and trends"
+            }
+          ],
+          "correctKey": "D"
+        },
+        {
+          "number": 4,
+          "prompt": "A major piece of equipment fails 30 minutes before a big event. What's the correct approach?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Do nothing and hope it resolves itself"
+            },
+            {
+              "key": "B",
+              "text": "Blame staff publicly before addressing the issue"
+            },
+            {
+              "key": "C",
+              "text": "Quickly assess options (backup/repair/alternative), communicate with the team, and make a fast, informed decision"
+            },
+            {
+              "key": "D",
+              "text": "Panic and cancel the event immediately"
+            }
+          ],
+          "correctKey": "C"
+        },
+        {
+          "number": 5,
+          "prompt": "A trusted, long-serving staff member is found involved in a serious integrity breach. What's the correct approach?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Ignore it to avoid conflict"
+            },
+            {
+              "key": "B",
+              "text": "Investigate fairly and consistently, applying the same standards regardless of seniority"
+            },
+            {
+              "key": "C",
+              "text": "Overlook it because of their tenure"
+            },
+            {
+              "key": "D",
+              "text": "Punish them more harshly than others to set an example"
+            }
+          ],
+          "correctKey": "B"
+        },
+        {
+          "number": 6,
+          "prompt": "What's the best way to build a culture where staff take ownership of the customer experience?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Involve staff in decisions, recognize good performance, and create clear accountability"
+            },
+            {
+              "key": "B",
+              "text": "Micromanage every task closely"
+            },
+            {
+              "key": "C",
+              "text": "Give no feedback so staff aren't discouraged"
+            },
+            {
+              "key": "D",
+              "text": "Only reward the highest performers publicly, ignore everyone else"
+            }
+          ],
+          "correctKey": "A"
+        }
+      ]
+    }
+  ]
+}
