@@ -14,6 +14,8 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: {
     default: "M11 Snooker & Shisha Lounge",

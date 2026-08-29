@@ -2,6 +2,8 @@ import { Footer } from "@/components/store/Footer";
 import { Header } from "@/components/store/Header";
 import { getSiteSettings } from "@/lib/site";
 
+export const dynamic = "force-dynamic";
+
 export default async function StoreLayout({
   children,
 }: {

@@ -39,22 +39,26 @@ const fallback: SiteData = {
 };
 
 export async function getSiteSettings(): Promise<SiteData> {
-  const row = await prisma.siteSetting.findUnique({ where: { id: "site" } });
-  if (!row) return fallback;
-  return {
-    restaurantName: row.restaurantName,
-    tagline: row.tagline,
-    phone: row.phone,
-    email: row.email,
-    address: row.address,
-    instagram: row.instagram,
-    tiktok: row.tiktok,
-    hours: parseJson<OpeningHour[]>(row.hoursJson, fallback.hours),
-    heroTitle: row.heroTitle,
-    heroSubtitle: row.heroSubtitle,
-    aboutText: row.aboutText,
-    bannerText: row.bannerText,
-  };
+  try {
+    const row = await prisma.siteSetting.findUnique({ where: { id: "site" } });
+    if (!row) return fallback;
+    return {
+      restaurantName: row.restaurantName,
+      tagline: row.tagline,
+      phone: row.phone,
+      email: row.email,
+      address: row.address,
+      instagram: row.instagram,
+      tiktok: row.tiktok,
+      hours: parseJson<OpeningHour[]>(row.hoursJson, fallback.hours),
+      heroTitle: row.heroTitle,
+      heroSubtitle: row.heroSubtitle,
+      aboutText: row.aboutText,
+      bannerText: row.bannerText,
+    };
+  } catch {
+    return fallback;
+  }
 }
 
 export function canManageContent(role?: string) {
