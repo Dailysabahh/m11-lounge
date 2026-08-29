@@ -8,7 +8,13 @@ const hours = [
   { day: "Friday – Sunday", hours: "2:00 PM – 3:00 AM" },
 ];
 
-async function main() {
+export async function seedMenu() {
+  const productCount = await prisma.product.count().catch(() => 0);
+  if (productCount > 0 && process.env.FORCE_SEED !== "1") {
+    console.log("Menu already seeded — skipping.");
+    return;
+  }
+
   await prisma.orderItem.deleteMany();
   await prisma.order.deleteMany();
   await prisma.customer.deleteMany();
@@ -579,13 +585,15 @@ async function main() {
   });
 }
 
-main()
-  .then(async () => {
-    console.log("Seeded M11 lounge database.");
-    await prisma.$disconnect();
-  })
-  .catch(async (e) => {
-    console.error(e);
-    await prisma.$disconnect();
-    process.exit(1);
-  });
+if (process.argv.some((arg) => arg.includes("seed.ts"))) {
+  seedMenu()
+    .then(async () => {
+      console.log("Seeded M11 lounge database.");
+      await prisma.$disconnect();
+    })
+    .catch(async (e) => {
+      console.error(e);
+      await prisma.$disconnect();
+      process.exit(1);
+    });
+}

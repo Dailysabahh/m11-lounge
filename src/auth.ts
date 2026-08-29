@@ -5,6 +5,9 @@ import { prisma } from "@/lib/prisma";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   trustHost: true,
+  secret:
+    process.env.AUTH_SECRET ||
+    "m11-lounge-auth-secret-change-after-first-login-2026",
   session: { strategy: "jwt" },
   pages: { signIn: "/admin/login" },
   providers: [

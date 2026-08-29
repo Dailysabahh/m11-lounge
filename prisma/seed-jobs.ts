@@ -21,7 +21,13 @@ type Role = {
 
 type Data = { general: Role; roles: Role[] };
 
-async function seedJobs() {
+export async function seedJobs() {
+  const roleCount = await prisma.jobRole.count().catch(() => 0);
+  if (roleCount > 0 && process.env.FORCE_SEED !== "1") {
+    console.log("Job questionnaires already seeded — skipping.");
+    return;
+  }
+
   const raw = readFileSync(
     path.join(process.cwd(), "prisma/questionnaire.json"),
     "utf8",
@@ -68,13 +74,15 @@ async function seedJobs() {
   }
 }
 
-seedJobs()
-  .then(async () => {
-    console.log("Seeded job questionnaires.");
-    await prisma.$disconnect();
-  })
-  .catch(async (e) => {
-    console.error(e);
-    await prisma.$disconnect();
-    process.exit(1);
-  });
+if (process.argv.some((arg) => arg.includes("seed-jobs.ts"))) {
+  seedJobs()
+    .then(async () => {
+      console.log("Seeded job questionnaires.");
+      await prisma.$disconnect();
+    })
+    .catch(async (e) => {
+      console.error(e);
+      await prisma.$disconnect();
+      process.exit(1);
+    });
+}
