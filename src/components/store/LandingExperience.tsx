@@ -91,7 +91,7 @@ export function LandingExperience({ site }: { site: SiteData }) {
           </p>
           <div className="gold-hairline mx-auto mt-8 w-44" />
           <p className="mt-8 max-w-2xl text-base leading-8 text-muted md:text-lg">
-            A private-feeling house is being finished in Lagos. Championship tables. Signature
+            A private-feeling house is being finished in Osogbo. Championship tables. Signature
             smoke. Royal platters. The doors are not open yet — the night is already being built.
           </p>
           <p className="mt-5 flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-gold-light">

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s · M11 Lounge",
   },
   description:
-    "Premium snooker and shisha lounge in Lagos. Royal platters, signature smoke, and black-and-gold nights. Play · Relax · Enjoy.",
+    "Premium snooker and shisha lounge in Osogbo. Royal platters, signature smoke, and black-and-gold nights. Play · Relax · Enjoy.",
   applicationName: "M11 Lounge",
   icons: {
     icon: [
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     siteName: "M11 Lounge",
     title: "M11 Snooker & Shisha Lounge",
     description:
-      "Premium snooker and shisha lounge in Lagos. Royal platters, signature smoke, and black-and-gold nights.",
+      "Premium snooker and shisha lounge in Osogbo. Royal platters, signature smoke, and black-and-gold nights.",
   },
   twitter: {
     card: "summary_large_image",
     title: "M11 Snooker & Shisha Lounge",
     description:
-      "Premium snooker and shisha lounge in Lagos. Royal platters, signature smoke, and black-and-gold nights.",
+      "Premium snooker and shisha lounge in Osogbo. Royal platters, signature smoke, and black-and-gold nights.",
   },
 };
 

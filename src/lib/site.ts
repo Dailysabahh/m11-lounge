@@ -23,7 +23,7 @@ const fallback: SiteData = {
   tagline: "Play · Relax · Enjoy",
   phone: "0700 111 0011",
   email: "hello@m11lounge.com",
-  address: "Lagos, Nigeria",
+  address: "Osogbo, Nigeria",
   instagram: "@M11_LOUNGE",
   tiktok: "@M11_LOUNGE",
   hours: [
@@ -34,7 +34,7 @@ const fallback: SiteData = {
   heroSubtitle:
     "A premium snooker and shisha lounge serving royal platters, signature smoke, and unforgettable nights.",
   aboutText:
-    "M11 is Lagos nightlife done with intention — gold-on-black luxury, championship tables, premium shisha, and a kitchen built for sharing.",
+    "M11 is Osogbo nightlife done with intention — gold-on-black luxury, championship tables, premium shisha, and a kitchen built for sharing.",
   bannerText: "Good music · Good vibes · Great memories",
 };
 

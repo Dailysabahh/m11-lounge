@@ -9,6 +9,17 @@ const hours = [
 ];
 
 export async function seedMenu() {
+  const site = await prisma.siteSetting.findUnique({ where: { id: "site" } }).catch(() => null);
+  if (site) {
+    await prisma.siteSetting.update({
+      where: { id: "site" },
+      data: {
+        address: site.address.replace(/Lagos/gi, "Osogbo"),
+        aboutText: site.aboutText.replace(/Lagos/gi, "Osogbo"),
+      },
+    });
+  }
+
   const productCount = await prisma.product.count().catch(() => 0);
   if (productCount > 0 && process.env.FORCE_SEED !== "1") {
     console.log("Menu already seeded — skipping.");
@@ -524,7 +535,7 @@ export async function seedMenu() {
       tagline: "Play · Relax · Enjoy",
       phone: "0700 111 0011",
       email: "hello@m11lounge.com",
-      address: "Lagos, Nigeria",
+      address: "Osogbo, Nigeria",
       instagram: "@M11_LOUNGE",
       tiktok: "@M11_LOUNGE",
       hoursJson: JSON.stringify(hours),
@@ -532,7 +543,7 @@ export async function seedMenu() {
       heroSubtitle:
         "A premium snooker and shisha lounge serving royal platters, signature smoke, and unforgettable nights.",
       aboutText:
-        "M11 is where Lagos comes to play. Championship snooker, premium shisha, and a black-and-gold kitchen of platters, pasta, and traditional bowls — all under one roof. Good music. Good vibes. Great memories.",
+        "M11 is where Osogbo comes to play. Championship snooker, premium shisha, and a black-and-gold kitchen of platters, pasta, and traditional bowls — all under one roof. Good music. Good vibes. Great memories.",
       bannerText: "Reservations: 0700 111 0011  ·  Follow @M11_LOUNGE",
     },
   });

@@ -51,7 +51,7 @@ export default async function OpenGraphImage() {
             textTransform: "uppercase",
           }}
         >
-          Opening soon · Lagos
+          Opening soon · Osogbo
         </div>
       </div>
     ),
