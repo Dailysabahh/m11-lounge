@@ -29,8 +29,8 @@ export function Footer({ site }: { site: SiteData }) {
         <div>
           <p className="mb-3 text-xs uppercase tracking-[0.25em] text-gold">Explore</p>
           <div className="flex flex-col gap-2 text-sm">
-            <Link href="/menu" className="text-cream hover:text-gold">
-              Menu
+            <Link href="/landing" className="text-cream hover:text-gold">
+              Opening soon
             </Link>
             <Link href="/careers" className="text-cream hover:text-gold">
               Apply for a job

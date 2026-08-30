@@ -1,15 +1,10 @@
-import { redirect } from "next/navigation";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { getSiteSettings } from "@/lib/site";
 import { formatNaira } from "@/lib/format";
 import { ProductCard } from "@/components/store/ProductCard";
-import { isPreopening } from "@/lib/preopening";
 
 export default async function HomePage() {
-  if (isPreopening()) {
-    redirect("/landing");
-  }
   const site = await getSiteSettings();
   const [featured, promotions, testimonials, categories] = await Promise.all([
     prisma.product.findMany({

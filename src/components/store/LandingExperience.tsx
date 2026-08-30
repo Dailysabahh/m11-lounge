@@ -1,21 +1,45 @@
 import Link from "next/link";
-import {
-  Instagram,
-  Briefcase,
-  UtensilsCrossed,
-  MapPin,
-  Phone,
-  Mail,
-  Crown,
-} from "lucide-react";
+import { Briefcase, MapPin, Phone, Mail } from "lucide-react";
 import type { SiteData } from "@/lib/site";
 import { instagramHref, tiktokHref } from "@/lib/preopening";
 import { RemindMeForm } from "@/components/store/RemindMeForm";
+
+function IconWrap({ children }: { children: React.ReactNode }) {
+  return <span className="inline-flex text-gold">{children}</span>;
+}
+
+function InstagramIcon({ size = 26 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+    </svg>
+  );
+}
 
 function TikTokIcon({ size = 26 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
       <path d="M14.5 3c.4 2.4 1.8 4.2 4.2 4.7v2.6c-1.5 0-2.9-.5-4.1-1.3v6.7c0 3.6-2.9 6.4-6.6 6.4S1.5 19.3 1.5 15.7 4.3 9.3 8 9.3c.4 0 .8 0 1.2.1v2.8c-.4-.1-.8-.2-1.2-.2-2.1 0-3.8 1.7-3.8 3.7s1.7 3.7 3.8 3.7 3.8-1.7 3.8-3.7V3h2.7Z" />
+    </svg>
+  );
+}
+
+function PlateIcon({ size = 26 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
+      <circle cx="12" cy="12" r="8" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  );
+}
+
+function CrownIcon({ size = 26 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
+      <path d="M3 18h18l-1.5-10-4.5 4-3-7-3 7-4.5-4L3 18Z" />
+      <path d="M5 18h14v2H5z" />
     </svg>
   );
 }
@@ -38,15 +62,15 @@ export function LandingExperience({ site }: { site: SiteData }) {
         </div>
 
         <header className="relative z-10 flex items-center justify-between px-5 py-6 md:px-10">
-          <p className="font-display text-sm tracking-[0.35em] text-gold-light">M11</p>
-          <a
-            href={ig}
-            target="_blank"
-            rel="noreferrer"
+          <Link href="/" className="font-display text-sm tracking-[0.35em] text-gold-light">
+            M11
+          </Link>
+          <Link
+            href="/"
             className="text-[11px] uppercase tracking-[0.28em] text-gold hover:text-gold-light"
           >
-            {site.instagram}
-          </a>
+            Visit website
+          </Link>
         </header>
 
         <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-4 pb-16 text-center">
@@ -74,9 +98,14 @@ export function LandingExperience({ site }: { site: SiteData }) {
             <MapPin size={14} />
             {site.address}
           </p>
-          <a href="#remind" className="btn-gold mt-10 px-10 py-3.5 text-xs">
-            Remind me at opening
-          </a>
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+            <a href="#remind" className="btn-gold px-10 py-3.5 text-xs">
+              Remind me at opening
+            </a>
+            <Link href="/" className="btn-ghost px-10 py-3.5 text-xs">
+              Visit the website
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -132,8 +161,21 @@ export function LandingExperience({ site }: { site: SiteData }) {
           Peek behind the doors
         </h2>
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
+          <Link href="/" className="card-lux p-7 transition hover:border-gold sm:col-span-2">
+            <IconWrap>
+              <CrownIcon />
+            </IconWrap>
+            <h3 className="mt-4 font-display text-2xl text-gold-light">Visit the website</h3>
+            <p className="mt-2 text-sm leading-6 text-muted">
+              See the full M11 homepage — featured plates, the lounge story, hours, and online
+              ordering.
+            </p>
+            <p className="mt-5 text-xs uppercase tracking-[0.22em] text-gold">Go to m11lounge.com →</p>
+          </Link>
           <Link href="/menu" className="card-lux p-7 transition hover:border-gold">
-            <UtensilsCrossed className="text-gold" size={26} />
+            <IconWrap>
+              <PlateIcon />
+            </IconWrap>
             <h3 className="mt-4 font-display text-2xl text-gold-light">Check the menu</h3>
             <p className="mt-2 text-sm leading-6 text-muted">
               Seafood, meat, traditional bowls, sides, and the shisha list — taste the house
@@ -151,7 +193,9 @@ export function LandingExperience({ site }: { site: SiteData }) {
             <p className="mt-5 text-xs uppercase tracking-[0.22em] text-gold">See roles →</p>
           </Link>
           <a href={ig} target="_blank" rel="noreferrer" className="card-lux p-7 transition hover:border-gold">
-            <Instagram className="text-gold" size={26} />
+            <IconWrap>
+              <InstagramIcon />
+            </IconWrap>
             <h3 className="mt-4 font-display text-2xl text-gold-light">Instagram</h3>
             <p className="mt-2 text-sm leading-6 text-muted">
               First looks, tables, smoke, and the countdown live on {site.instagram}.
@@ -159,9 +203,9 @@ export function LandingExperience({ site }: { site: SiteData }) {
             <p className="mt-5 text-xs uppercase tracking-[0.22em] text-gold">Follow →</p>
           </a>
           <a href={tt} target="_blank" rel="noreferrer" className="card-lux p-7 transition hover:border-gold">
-            <span className="text-gold">
+            <IconWrap>
               <TikTokIcon />
-            </span>
+            </IconWrap>
             <h3 className="mt-4 font-display text-2xl text-gold-light">TikTok</h3>
             <p className="mt-2 text-sm leading-6 text-muted">
               Clips from the floor and the vibe we are finishing. {site.tiktok}
@@ -177,7 +221,9 @@ export function LandingExperience({ site }: { site: SiteData }) {
             <p className="mt-5 text-xs uppercase tracking-[0.22em] text-gold">Get in touch →</p>
           </Link>
           <Link href="/about" className="card-lux p-7 transition hover:border-gold">
-            <Crown className="text-gold" size={26} />
+            <IconWrap>
+              <CrownIcon />
+            </IconWrap>
             <h3 className="mt-4 font-display text-2xl text-gold-light">The lounge</h3>
             <p className="mt-2 text-sm leading-6 text-muted">
               Play. Relax. Enjoy. Read the story of the house before you walk in.

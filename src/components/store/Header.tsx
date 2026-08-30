@@ -13,28 +13,18 @@ const links = [
   { href: "/contact", label: "Contact" },
 ];
 
-const preopeningLinks = [
-  { href: "/landing", label: "Home" },
-  { href: "/menu", label: "Menu" },
-  { href: "/careers", label: "Apply" },
-  { href: "/contact", label: "Contact" },
-];
-
 export function Header({
   restaurantName,
   phone,
   instagram,
-  preopening = false,
 }: {
   restaurantName: string;
   phone: string;
   instagram?: string;
-  preopening?: boolean;
 }) {
   const pathname = usePathname();
   const { count } = useCart();
   const [open, setOpen] = useState(false);
-  const nav = preopening ? preopeningLinks : links;
 
   return (
     <header className="sticky top-0 z-50 border-b border-gold/25 bg-ink/90 backdrop-blur-md">
@@ -56,7 +46,7 @@ export function Header({
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {nav.map((l) => (
+          {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
@@ -86,20 +76,18 @@ export function Header({
           >
             {phone}
           </a>
-          {!preopening && (
-            <Link
-              href="/cart"
-              className="relative flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 text-gold-light"
-              aria-label="Cart"
-            >
-              <ShoppingBag size={18} />
-              {count > 0 && (
-                <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-gold px-1 text-[10px] font-bold text-ink">
-                  {count}
-                </span>
-              )}
-            </Link>
-          )}
+          <Link
+            href="/cart"
+            className="relative flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 text-gold-light"
+            aria-label="Cart"
+          >
+            <ShoppingBag size={18} />
+            {count > 0 && (
+              <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-gold px-1 text-[10px] font-bold text-ink">
+                {count}
+              </span>
+            )}
+          </Link>
           <button
             className="md:hidden text-gold-light"
             onClick={() => setOpen((v) => !v)}
@@ -115,7 +103,7 @@ export function Header({
             {restaurantName}
           </p>
           <div className="flex flex-col gap-3">
-            {nav.map((l) => (
+            {links.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}

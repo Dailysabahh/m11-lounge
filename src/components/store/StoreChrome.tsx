@@ -7,17 +7,14 @@ import type { SiteData } from "@/lib/site";
 
 export function StoreChrome({
   site,
-  preopening,
   children,
 }: {
   site: SiteData;
-  preopening: boolean;
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const landingHome = pathname === "/landing" || (preopening && pathname === "/");
 
-  if (landingHome) {
+  if (pathname === "/landing") {
     return <>{children}</>;
   }
 
@@ -25,15 +22,10 @@ export function StoreChrome({
     <div className="noise flex min-h-screen flex-col">
       {site.bannerText && (
         <p className="border-b border-gold/20 bg-charcoal py-2 text-center text-[11px] uppercase tracking-[0.28em] text-gold-light">
-          {preopening ? "Opening soon · Lagos" : site.bannerText}
+          {site.bannerText}
         </p>
       )}
-      <Header
-        restaurantName={site.restaurantName}
-        phone={site.phone}
-        instagram={site.instagram}
-        preopening={preopening}
-      />
+      <Header restaurantName={site.restaurantName} phone={site.phone} instagram={site.instagram} />
       <main className="flex-1">{children}</main>
       <Footer site={site} />
     </div>
