@@ -18,11 +18,11 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: {
-    default: "M11 Snooker & Shisha Lounge",
+    default: "M11 Lounge — Opening Soon",
     template: "%s · M11 Lounge",
   },
   description:
-    "Premium snooker and shisha lounge in Lagos. Royal platters, signature smoke, and black-and-gold nights. Play · Relax · Enjoy.",
+    "M11 Snooker & Shisha Lounge is opening soon in Lagos. Preview the menu, follow Instagram, and apply to join the team.",
   icons: { icon: "/brand/logo.png" },
 };
 

@@ -30,17 +30,25 @@ export function Footer({ site }: { site: SiteData }) {
           <p className="mb-3 text-xs uppercase tracking-[0.25em] text-gold">Explore</p>
           <div className="flex flex-col gap-2 text-sm">
             <Link href="/menu" className="text-cream hover:text-gold">
-              Menu & store
+              Menu
+            </Link>
+            <Link href="/careers" className="text-cream hover:text-gold">
+              Apply for a job
             </Link>
             <Link href="/about" className="text-cream hover:text-gold">
               The lounge
             </Link>
             <Link href="/contact" className="text-cream hover:text-gold">
-              Reservations
+              Contact
             </Link>
-            <p className="text-muted">
-              {site.instagram} · {site.tiktok}
-            </p>
+            <a
+              href={`https://www.instagram.com/${site.instagram.replace(/^@/, "")}/`}
+              target="_blank"
+              rel="noreferrer"
+              className="text-cream hover:text-gold"
+            >
+              {site.instagram}
+            </a>
           </div>
         </div>
       </div>

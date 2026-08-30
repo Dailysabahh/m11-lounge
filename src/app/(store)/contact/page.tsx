@@ -30,7 +30,23 @@ export default async function ContactPage() {
           <p>
             <span className="text-gold">Social</span>
             <br />
-            {site.instagram} · {site.tiktok}
+            <a
+              href={`https://www.instagram.com/${site.instagram.replace(/^@/, "")}/`}
+              target="_blank"
+              rel="noreferrer"
+              className="text-cream hover:text-gold"
+            >
+              {site.instagram}
+            </a>
+            {" · "}
+            <a
+              href={`https://www.tiktok.com/@${site.tiktok.replace(/^@/, "")}`}
+              target="_blank"
+              rel="noreferrer"
+              className="text-cream hover:text-gold"
+            >
+              {site.tiktok}
+            </a>
           </p>
           <div>
             <span className="text-gold">Hours</span>
