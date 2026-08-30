@@ -1,22 +1,16 @@
+import { redirect } from "next/navigation";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { getSiteSettings } from "@/lib/site";
 import { formatNaira } from "@/lib/format";
 import { ProductCard } from "@/components/store/ProductCard";
-import { PreopeningLanding } from "@/components/store/PreopeningLanding";
 import { isPreopening } from "@/lib/preopening";
 
-export const metadata = {
-  title: "Opening Soon",
-  description:
-    "M11 Snooker & Shisha Lounge is opening soon in Lagos. Preview the menu, follow us on Instagram, and apply to join the team.",
-};
-
 export default async function HomePage() {
-  const site = await getSiteSettings();
   if (isPreopening()) {
-    return <PreopeningLanding site={site} />;
+    redirect("/landing");
   }
+  const site = await getSiteSettings();
   const [featured, promotions, testimonials, categories] = await Promise.all([
     prisma.product.findMany({
       where: { featured: true, available: true },

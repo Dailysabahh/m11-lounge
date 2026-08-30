@@ -14,7 +14,7 @@ const links = [
 ];
 
 const preopeningLinks = [
-  { href: "/", label: "Home" },
+  { href: "/landing", label: "Home" },
   { href: "/menu", label: "Menu" },
   { href: "/careers", label: "Apply" },
   { href: "/contact", label: "Contact" },

@@ -189,6 +189,14 @@ model Question {
   @@unique([jobRoleId, number])
 }
 
+model OpeningReminder {
+  id        String   @id @default(cuid())
+  name      String?
+  email     String   @unique
+  phone     String?
+  createdAt DateTime @default(now())
+}
+
 model Application {
   id            String            @id @default(cuid())
   name          String

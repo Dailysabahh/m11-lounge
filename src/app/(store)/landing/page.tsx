@@ -1,0 +1,13 @@
+import { getSiteSettings } from "@/lib/site";
+import { LandingExperience } from "@/components/store/LandingExperience";
+
+export const metadata = {
+  title: "Opening Soon",
+  description:
+    "M11 Snooker & Shisha Lounge is opening soon in Lagos. Preview the menu, follow us, apply to join the team, and get reminded on opening night.",
+};
+
+export default async function LandingPage() {
+  const site = await getSiteSettings();
+  return <LandingExperience site={site} />;
+}

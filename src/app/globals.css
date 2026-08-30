@@ -94,6 +94,37 @@ h3,
   background: rgba(201, 162, 39, 0.1);
 }
 
+@keyframes m11-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+.m11-pulse {
+  animation: m11-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes m11-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.m11-rise {
+  animation: m11-rise 0.9s ease-out both;
+}
+
 input,
 select,
 textarea {

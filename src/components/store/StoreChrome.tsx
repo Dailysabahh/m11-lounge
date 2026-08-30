@@ -15,7 +15,7 @@ export function StoreChrome({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const landingHome = preopening && pathname === "/";
+  const landingHome = pathname === "/landing" || (preopening && pathname === "/");
 
   if (landingHome) {
     return <>{children}</>;
