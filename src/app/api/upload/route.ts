@@ -15,6 +15,12 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "No file" }, { status: 400 });
   }
 
-  const url = await saveUpload(file, "menu");
-  return NextResponse.json({ url });
+  const saved = await saveUpload(file, "menu");
+  if (saved.kind !== "url") {
+    return NextResponse.json(
+      { error: "Paste an image URL for now, or add Blob storage." },
+      { status: 400 },
+    );
+  }
+  return NextResponse.json({ url: saved.url });
 }

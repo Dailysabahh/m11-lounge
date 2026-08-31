@@ -12,7 +12,7 @@ export default async function ApplicationsPage({
   const applications = await prisma.application.findMany({
     where: {
       ...(role ? { jobRole: { slug: role } } : {}),
-      ...(status ? { status: status as never } : { status: { not: "DRAFT" } }),
+      ...(status ? { status: status as never } : {}),
     },
     include: { jobRole: true },
     orderBy: { createdAt: "desc" },
@@ -27,7 +27,7 @@ export default async function ApplicationsPage({
       <h1 className="font-display text-3xl text-gold-light">Applications</h1>
       <div className="mt-4 flex flex-wrap gap-2">
         <Link href="/admin/applications" className="border border-gold/30 px-3 py-1 text-[10px] uppercase tracking-widest text-gold">
-          Submitted
+          All
         </Link>
         {roles.map((r) => (
           <Link

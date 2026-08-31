@@ -8,7 +8,11 @@ function filename(original: string, folder: string) {
   return `${folder}/${id}`;
 }
 
-export async function saveUpload(file: File, folder: string) {
+export type SavedFile =
+  | { kind: "url"; url: string }
+  | { kind: "bytes"; data: Uint8Array };
+
+export async function saveUpload(file: File, folder: string): Promise<SavedFile> {
   const key = filename(file.name, folder);
 
   if (process.env.BLOB_READ_WRITE_TOKEN) {
@@ -16,12 +20,17 @@ export async function saveUpload(file: File, folder: string) {
       access: "public",
       token: process.env.BLOB_READ_WRITE_TOKEN,
     });
-    return blob.url;
+    return { kind: "url", url: blob.url };
+  }
+
+  // Vercel serverless disk is not persistent — keep the file in the database.
+  if (process.env.VERCEL) {
+    return { kind: "bytes", data: new Uint8Array(await file.arrayBuffer()) };
   }
 
   const rel = key.replace(/^\//, "");
   const dest = path.join(process.cwd(), "public/uploads", rel);
   await mkdir(path.dirname(dest), { recursive: true });
   await writeFile(dest, Buffer.from(await file.arrayBuffer()));
-  return `/uploads/${rel}`;
+  return { kind: "url", url: `/uploads/${rel}` };
 }

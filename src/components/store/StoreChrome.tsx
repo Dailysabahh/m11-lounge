@@ -14,7 +14,7 @@ export function StoreChrome({
 }) {
   const pathname = usePathname();
 
-  if (pathname === "/landing") {
+  if (pathname === "/coming-soon" || pathname === "/landing") {
     return <>{children}</>;
   }
 

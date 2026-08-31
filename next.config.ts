@@ -5,6 +5,11 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   agentRules: false,
+  async redirects() {
+    return [
+      { source: "/landing", destination: "/coming-soon", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

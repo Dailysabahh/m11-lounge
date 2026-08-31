@@ -101,7 +101,10 @@ export default async function ApplicationDetailPage({
       </div>
 
       <p className="mt-6">
-        <a href={app.cvPath} target="_blank" rel="noreferrer" className="text-gold underline">
+        <a
+          href={`/api/admin/cv/${app.id}`}
+          className="text-gold underline"
+        >
           Download CV ({app.cvName})
         </a>
       </p>

@@ -204,6 +204,8 @@ model Application {
   phone         String
   cvPath        String
   cvName        String
+  cvMime        String            @default("application/octet-stream")
+  cvData        Bytes?
   jobRoleId     String
   jobRole       JobRole           @relation(fields: [jobRoleId], references: [id])
   status        ApplicationStatus @default(DRAFT)
